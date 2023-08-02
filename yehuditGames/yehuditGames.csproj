@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0274166-9880-4EA5-AE7C-21B6DF13CBC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>yehuditGames</RootNamespace>
+    <AssemblyName>yehuditGames</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ChavotDaat.cs" />
+    <Compile Include="BLL\ChavotDaatTable.cs" />
+    <Compile Include="BLL\Chevrot.cs" />
+    <Compile Include="BLL\ChevrotTable.cs" />
+    <Compile Include="BLL\GeneralTable.cs" />
+    <Compile Include="BLL\GeneralTableByAutoKod.cs" />
+    <Compile Include="BLL\GeneralTableWithTwoKeys.cs" />
+    <Compile Include="BLL\Mishtamshim.cs" />
+    <Compile Include="BLL\MishtamshimTable.cs" />
+    <Compile Include="BLL\pratyHatashlom.cs" />
+    <Compile Include="BLL\pratyHatashlomTable.cs" />
+    <Compile Include="BLL\pratyRechisha.cs" />
+    <Compile Include="BLL\pratyRechishaTable.cs" />
+    <Compile Include="BLL\pritim.cs" />
+    <Compile Include="BLL\pritimTable.cs" />
+    <Compile Include="BLL\rechishot.cs" />
+    <Compile Include="BLL\rechishotTable.cs" />
+    <Compile Include="BLL\sales.cs" />
+    <Compile Include="BLL\salesTable.cs" />
+    <Compile Include="BLL\sugeiGames.cs" />
+    <Compile Include="BLL\sugeiGamesTable.cs" />
+    <Compile Include="DAL\Dal.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChavotDaat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChavotDaat.Designer.cs">
+      <DependentUpon>frmChavotDaat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChevrot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChevrot.Designer.cs">
+      <DependentUpon>frmChevrot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGames.Designer.cs">
+      <DependentUpon>frmGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmGamesForLakoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGamesForLakoch.Designer.cs">
+      <DependentUpon>frmGamesForLakoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHachagatGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHachagatGames.Designer.cs">
+      <DependentUpon>frmHachagatGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHazagatChavatDaatOnUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHazagatChavatDaatOnUser.Designer.cs">
+      <DependentUpon>frmHazagatChavatDaatOnUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHazagatUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHazagatUsers.Designer.cs">
+      <DependentUpon>frmHazagatUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmStart.Designer.cs">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChavotDaat.resx">
+      <DependentUpon>frmChavotDaat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChevrot.resx">
+      <DependentUpon>frmChevrot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmGames.resx">
+      <DependentUpon>frmGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmGamesForLakoch.resx">
+      <DependentUpon>frmGamesForLakoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHachagatGames.resx">
+      <DependentUpon>frmHachagatGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHazagatChavatDaatOnUser.resx">
+      <DependentUpon>frmHazagatChavatDaatOnUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHazagatUsers.resx">
+      <DependentUpon>frmHazagatUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmStart.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חוגים.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YALDA.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KIDS.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YALDA1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOY.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOY1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ישום פרפר.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_BEARS_.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\בסיס לפרפר.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חוגים4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חוגים1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15049.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חוגים3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חוגים11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1263.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C0000802.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HI027007.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB043.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
